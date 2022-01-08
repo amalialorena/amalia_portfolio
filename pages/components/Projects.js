@@ -40,15 +40,17 @@ function Projects() {
     return (
       <section>
        <h2>Projects</h2>
-       <div></div>
-       {projects.map((project) => {
-        return <div key={project.id}>
-            <Image src={project.imagePath} alt={project.imageAlt} width={project.imageWidth} height={project.imageHeight}/>
-            <div>{project.tags}</div>
-            <div>{project.title}</div>
-            <div>{project.description}</div>
-        </div>
-       })}
+       <div className="card">
+            {projects.map((project) => {
+                return <div key={project.id}>
+                    <Image src={project.imagePath} alt={project.imageAlt} width={project.imageWidth} height={project.imageHeight}/>
+                    <div>{project.tags}</div>
+                    <div>{project.title}</div>
+                    <div>{project.description}</div>
+                </div>
+            })}
+       </div>
+       
       </section>
     );
   }

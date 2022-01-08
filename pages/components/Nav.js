@@ -1,9 +1,14 @@
 function Nav() {
   return (
     <nav>
-      <h4>Amalia Lorena Feariu</h4>
-      <h5>Personal portfolio</h5>
-      <button></button>
+      <a className="name">
+        <span>Amalia Lorena Ferariu</span>
+        <span className="portfolio">Personal portfolio</span>
+      </a>
+      <div>
+          <button>Contact me</button>
+      </div>
+      
     </nav>
   );
 }

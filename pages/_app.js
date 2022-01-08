@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import '../styles/nav.css';
+import '../styles/nav.scss';
 import '../styles/projects.css';
 import '../styles/footer.css'
 
