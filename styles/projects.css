@@ -1,3 +1,22 @@
-section {
-    background-color: blue;
+.cards__container {}
+
+.cards__container .cards {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cards__container .cards .card {
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cards__container .cards .card span {
+    flex-shrink: 0;
+}
+
+.cards__container .cards .card .card__text {
+   padding: 16px;
 }
