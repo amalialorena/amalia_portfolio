@@ -60,13 +60,13 @@ const projects = [
 
 function Projects() {
     return (
-      <section className="cards__container">
+      <section className="cards-container">
        <h2>Projects</h2>
        <div className="cards">
             {projects.map((project) => {
                 return <div className="card" key={project.id}>
                     <Image src={project.imagePath} alt={project.imageAlt} width={project.imageWidth} height={project.imageHeight}/>
-                    <div className="card__text">
+                    <div className="card-text">
                         <div>{project.tags}</div>
                         <div>{project.title}</div>
                         <div>{project.description}</div>

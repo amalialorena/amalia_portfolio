@@ -3,12 +3,12 @@ h2{
     text-align: center;
 }
 
-.cards__container .cards {
+.cards-container .cards {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.cards__container .cards .card {
+.cards-container .cards .card {
     border: 1px solid #e6e6e6;
     border-radius: 8px;
     margin-bottom: 16px;
@@ -16,10 +16,10 @@ h2{
     flex-wrap: nowrap;
 }
 
-.cards__container .cards .card span {
+.cards-container .cards .card span {
     flex-shrink: 0;
 }
 
-.cards__container .cards .card .card__text {
+.cards-container .cards .card .card__text {
    padding: 16px;
 }
