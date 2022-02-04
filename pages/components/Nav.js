@@ -2,8 +2,8 @@ function Nav() {
   return (
     <nav>
       <a className="name">
-        <span>Amalia Lorena Ferariu</span>
-        <span className="portfolio">Personal portfolio</span>
+        <div>Amalia Lorena Ferariu</div>
+        <div className="portfolio">Personal portfolio</div>
       </a>
       <div>
           <button>Contact me</button>
