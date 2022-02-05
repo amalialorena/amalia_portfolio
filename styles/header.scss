@@ -1,7 +1,10 @@
 @import "./variables.scss";
 header {
   text-align: center;
-  background-color: #e3f1ff;
+  background-image: url('/header-background.png');
+  background-position: 0 -6px;
+  box-shadow: inset 0px 15px 20px -10px rgba(0, 0, 0, 0.40);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
   padding-top: 55px;
   height: 485px;
@@ -20,7 +23,7 @@ header {
   .greeting-bubble {
     position: relative;
     height: 200px;
-    background-image: url(/greeting-bubble.svg);
+    background-image: url('/greeting-bubble.svg');
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 40px;
