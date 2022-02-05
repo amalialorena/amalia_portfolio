@@ -9,13 +9,13 @@ function Nav() {
         </div>
         <a>
           <div className="my-name">
-            <strong>Amalia</strong> Lorena Ferariu
+            <strong>Amalia</strong> Ferariu
           </div>
           <div className="portfolio">Personal portfolio</div>
         </a>
       </div>
       <div>
-        <button className="greeting-button">
+        <button className="button greeting-button">
           <Image src="/mail.svg" alt="mail" width="16" height="16" />
           <span>Contact me</span>
         </button>

@@ -23,7 +23,7 @@ function Header() {
         height="12"
       />
       <p>Right now I am available for work</p>
-      <button className="greeting-button">
+      <button className="button greeting-button">
         <Image
         src="/mail.svg"
         alt="mail"

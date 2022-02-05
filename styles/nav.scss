@@ -28,15 +28,16 @@ nav {
   }
 
   div {
-    button {
-      span:first-child {
-        margin-right: 8px !important;
-      }
+    .button {
       padding: 10px 20px;
       border-radius: 8px;
       border: 0;
       background-color: $brand-color;
       color: white;
+
+      span:first-child {
+        margin-right: 8px !important;
+      }
     }
   }
 }

@@ -13,13 +13,19 @@ a {
   text-decoration: none;
 }
 
-button {
+.button {
   display: flex;
   align-items: center;
   background-color: $brand-color;
   color: white;
   line-height: 19px;
   font-size: 16px;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {  
+    background-color: $brand-color-dark;
+  }
 }
 
 * {

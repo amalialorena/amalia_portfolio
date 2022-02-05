@@ -2,7 +2,7 @@ function Button({ isLink, text }) {
     return(
         isLink ? 
         <a href="#">{text}</a> : 
-        <button>{text}</button>
+        <button className="button">{text}</button>
     )
 }
 
