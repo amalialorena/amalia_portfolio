@@ -2,28 +2,51 @@
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 50px;
   align-items: center;
+  padding: 0 16px;
+
+  @media (min-width: 786px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-name {
+    display: none;
+  }
 
   .name-container {
-    display: flex;
-    align-items: center;
+    @media (min-width: 786px) {
+      display: flex;
+      align-items: center;
+    }
 
     .logo {
+      @media (min-width: 786px) {
         margin-right: 10px;
+      }
     }
 
     .my-name {
-      font-size: 18px;
-      line-height: 21px;
+      @media (min-width: 786px) {
+        font-size: 18px;
+        line-height: 21px;
+      }
     }
 
     .portfolio {
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      color: $brand-color;
+      @media (min-width: 786px) {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: $brand-color;
+      }
+    }
+  }
+  .nav-name {
+    @media (min-width: 786px) {
+      display: inline-block;
     }
   }
 

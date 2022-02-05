@@ -7,12 +7,12 @@ function Nav() {
         <div className="logo">
           <Image src="/logo.svg" alt="logo" width="29" height="29" />
         </div>
-        <a>
-          <div className="my-name">
+        <span className="nav-name">
+          <div clspanssName="my-name">
             <strong>Amalia</strong> Ferariu
           </div>
           <div className="portfolio">Personal portfolio</div>
-        </a>
+        </span>
       </div>
       <div>
         <button className="button greeting-button">

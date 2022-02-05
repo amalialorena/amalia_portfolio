@@ -1,24 +1,30 @@
 @import "./variables.scss";
+
 header {
-  text-align: center;
-  background-image: url('/header-background.png');
-  background-position: 0 -6px;
-  box-shadow: inset 0px 15px 20px -10px rgba(0, 0, 0, 0.40);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  position: relative;
-  padding-top: 55px;
-  height: 485px;
+  padding: 40px 16px 80px;
+    text-align: center;
+    background-image: url('/header-background.png');
+    background-position: 0 -6px;
+    box-shadow: inset 0px 15px 20px -10px rgba(0, 0, 0, 0.40);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+
+  @media (min-width: 786px) {
+    padding-top: 55px;
+    height: 485px;
+    padding: 40px 16px 20px;
+  }
 
   h2 {
     margin: 0;
     font-style: normal;
     font-weight: bold;
-    font-size: 72px;
-    line-height: 84px;
     text-align: center;
     position: absolute;
     top: 40%;
     left: 50%;
+    font-size: 72px;
+    line-height: 84px;
     transform: translate(-50%, -50%);
   }
 
@@ -32,13 +38,20 @@ header {
   }
 
   .greeting-text {
-    margin-bottom: 40px;
-
+    margin-bottom: 20px;
+    @media (min-width: 786px) {
+      margin-bottom: 40px;
+    }
+    
     span {
       text-align: center;
       font-weight: normal;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 20px;
+      line-height: 28px;
+      @media (min-width: 786px) {
+        line-height: 32px;
+        font-size: 24px;
+      }
 
       span {
         display: inline-block;
@@ -53,11 +66,14 @@ header {
 
   p {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 21px;
     text-align: center;
     display: inline-block;
     margin: 0 0 0 8px;
+    @media (min-width: 786px) {
+      font-size: 18px;
+    }
   }
 
   .greeting-button {
@@ -65,13 +81,16 @@ header {
     bottom: 2px;
     left: 50%;
     transform: translate(-50%, 50%);
-    padding: 16px 40px;
     border-radius: 20px;
     border: 2px solid white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    padding: 12px 22px;
     span:first-child {
       margin-right: 8px !important;
+    }
+    @media (min-width: 786px) {
+      padding: 16px 40px;
+      
     }
   }
 }
