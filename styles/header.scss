@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 header {
   text-align: center;
   background-color: #e3f1ff;
@@ -54,20 +54,13 @@ header {
     span:first-child {
       margin-right: 8px !important;
     }
-    display: flex;
-    align-items: center;
     position: absolute;
     bottom: 2px;
     left: 50%;
     transform: translate(-50%, 50%);
     padding: 16px 40px;
-    border-radius: 18px;
-    background-color: $brand-color;
-    color: white;
+    border-radius: 20px;
     border: 2px solid white;
-    font-size: 16px;
-    line-height: 19px;
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }

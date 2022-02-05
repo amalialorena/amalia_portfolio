@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap");
+@import './variables.scss';
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,7 +13,15 @@ a {
   text-decoration: none;
 }
 
+button {
+  display: flex;
+  align-items: center;
+  background-color: $brand-color;
+  color: white;
+  line-height: 19px;
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
 }
-

@@ -1,28 +1,42 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 nav {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+
+  .name-container {
     display: flex;
-    justify-content: space-around; 
-    height: 50px;
     align-items: center;
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    .my-name {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
     .portfolio {
-        font-size: 12px;
-        font-weight: bold;
-        color: $brand-color;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: $brand-color;
     }
-    
-    div {
-        button {
-            padding: 5px 20px;
-            border-radius: 8px;
-            border: 0;
-            background-color: $brand-color;
-            color: white;
-        }  
+  }
+
+  div {
+    button {
+      span:first-child {
+        margin-right: 8px !important;
+      }
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: 0;
+      background-color: $brand-color;
+      color: white;
     }
+  }
 }
-
-
-
-
-
