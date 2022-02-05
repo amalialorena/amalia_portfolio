@@ -10,15 +10,19 @@ h2 {
     padding: 8px 30px;
     color: white;
     border-radius: 8px;
-    position: absolute;
-    bottom: -12px;
-    right: 50%;
-    transform: translate(50%, -50%);
     border: 0;
     cursor: pointer;
-
-    &:hover {  
+    max-width: calc(100% - 32px);
+    margin: 0 auto 10px;
+    position: inherit;
+    &:hover {
       background-color: $brand-color-dark;
+    }
+    @media (min-width: 768px) {
+      position: absolute;
+      bottom: -12px;
+      right: 50%;
+      transform: translate(50%, -50%);
     }
   }
 
