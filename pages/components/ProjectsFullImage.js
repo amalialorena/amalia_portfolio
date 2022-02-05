@@ -27,7 +27,7 @@ const projects = [
         id: '3',
         tags: 'VUEJS',
         title: 'BoolApp: a whatsapp clone',
-        url: 'https://elastic-rosalind-d13b9f.netlify.app',
+        url: 'https://optimistic-blackwell-b8d3cc.netlify.app',
         description: 'Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.',
         imagePath: '/playstation.jpg',
         imageAlt: 'project image',
@@ -38,7 +38,7 @@ const projects = [
         id: '4',
         tags: 'VUEJS',
         title: 'BoolApp: a whatsapp clone',
-        url: 'https://elastic-rosalind-d13b9f.netlify.app',
+        url: 'https://quizzical-benz-9502d1.netlify.app',
         description: 'Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.',
         imagePath: '/spotify.jpg',
         imageAlt: 'project image',
@@ -60,7 +60,7 @@ function ProjectsFullImage() {
                         <div className="title">{project.title}</div>
                         <div className="description">{project.description}</div>    
                     </div>
-                    <a href={project.url} className="button">Visit website</a>
+                    <a href={project.url} target="_blank" rel="noreferrer" className="button">Visit website</a>
                 </div>
             })}
        </div>
@@ -68,7 +68,6 @@ function ProjectsFullImage() {
       </section>
     );
   };
-
 
 
   export default ProjectsFullImage;
