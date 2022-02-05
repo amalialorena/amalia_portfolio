@@ -6,7 +6,7 @@ function Nav() {
         <div className="portfolio">Personal portfolio</div>
       </a>
       <div>
-          <button>Contact me</button>
+          <button className="greeting-button">Contact me</button>
       </div>
       
     </nav>

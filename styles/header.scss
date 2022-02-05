@@ -1,3 +1,4 @@
+@import './variables.scss';
 header {
   text-align: center;
   background-color: #e3f1ff;
@@ -36,7 +37,7 @@ header {
         font-weight: bold;
       }
       span.name {
-        color: #0b61ff;
+        color: $brand-color;
       }
     }
   }
@@ -47,7 +48,7 @@ header {
     line-height: 21px;
     text-align: center;
     display: inline-block;
-    margin-left: 8px;
+    margin: 0 0 0 8px;
   }
   .greeting-button {
     span:first-child {
@@ -61,10 +62,12 @@ header {
     transform: translate(-50%, 50%);
     padding: 16px 40px;
     border-radius: 18px;
-    background-color: #0b61fe;
+    background-color: $brand-color;
     color: white;
     border: 2px solid white;
     font-size: 16px;
     line-height: 19px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }

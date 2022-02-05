@@ -60,8 +60,7 @@ function ProjectsFullImage() {
                     <div className="text">
                         <div className="tags">{project.tags}</div>
                         <div className="title">{project.title}</div>
-                        <div className="description">{project.description}</div>
-                        
+                        <div className="description">{project.description}</div>    
                     </div>
                     <a href={project.url} className="button">Visit website</a>
                 </div>
