@@ -21,7 +21,6 @@ function Footer() {
         <p>Copyright 2021 @Amalia Lorena Ferariu </p>
         <small>Thanks for stopping by</small>
         </div>
-
       </section>
     </footer>
   );
