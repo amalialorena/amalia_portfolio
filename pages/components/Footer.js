@@ -1,3 +1,4 @@
+import Image from 'next/image';
 function Footer() {
   return (
     <footer>
@@ -11,7 +12,7 @@ function Footer() {
             </p>
           </div>
           <div className="telegram-icon">
-            <img src="/telegram.svg" alt="telegram icon"></img>
+            <Image src="/telegram.svg" alt="telegram icon" width="33" height="34"/>
           </div>
         </div>
       </section>
