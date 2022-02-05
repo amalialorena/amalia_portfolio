@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import Button from '../components/Button';
 
 const projects = [
     {
@@ -7,59 +7,49 @@ const projects = [
         tags: 'VUEJS',
         title: 'BoolFlix: a Netflix clone',
         url: 'https://serene-aryabhata-f2a958.netlify.app',
-        description: '',
-        imagePath: '/boolflix.png',
+        description: 'Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.',
+        imagePath: '/boolflix.jpg',
         imageAlt: 'project image',
-        imageWidth: '202',
+        imageWidth: '650',
         imageHeight: '325',
-    },
+    }, 
     {
         id: '2',
         tags: 'VUEJS',
         title: 'BoolApp: a whatsapp clone',
         url: 'https://elastic-rosalind-d13b9f.netlify.app',
         description: 'Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.',
-        imagePath: '/boolflix.png',
+        imagePath: '/boolzapp.jpg',
         imageAlt: 'project image',
-        imageWidth: '202',
+        imageWidth: '650',
         imageHeight: '325',
     },
     {
         id: '3',
         tags: 'VUEJS',
-        title: 'Spotify: a spotify clone',
-        url: 'https://quizzical-benz-9502d1.netlify.app',
+        title: 'BoolApp: a whatsapp clone',
+        url: 'https://elastic-rosalind-d13b9f.netlify.app',
         description: 'Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.',
-        imagePath: '/boolflix.png',
+        imagePath: '/playstation.jpg',
         imageAlt: 'project image',
-        imageWidth: '202',
+        imageWidth: '650',
         imageHeight: '325',
     },
     {
         id: '4',
         tags: 'VUEJS',
-        title: 'Dropbox: dropbox website clone',
-        url: ' https://gallant-leavitt-325733.netlify.app',
+        title: 'BoolApp: a whatsapp clone',
+        url: 'https://elastic-rosalind-d13b9f.netlify.app',
         description: 'Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.',
-        imagePath: '/boolflix.png',
+        imagePath: '/spotify.jpg',
         imageAlt: 'project image',
-        imageWidth: '202',
+        imageWidth: '650',
         imageHeight: '325',
     },
-    {
-        id: '5',
-        tags: 'VUEJS',
-        title: 'Playstation: playstation website clone',
-        url: 'https://optimistic-blackwell-b8d3cc.netlify.app/',
-        description: 'Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.',
-        imagePath: '/boolflix.png',
-        imageAlt: 'project image',
-        imageWidth: '202',
-        imageHeight: '325',
-    }
 ];
 
-function Projects() {
+function ProjectsFullImage() {
+    const projectText = "qweweew  qweewq Website";
     return (
       <section className="cards-container">
        <h2>Projects</h2>
@@ -67,19 +57,21 @@ function Projects() {
             {projects.map((project) => {
                 return <div className="card" key={project.id}>
                     <Image src={project.imagePath} alt={project.imageAlt} width={project.imageWidth} height={project.imageHeight}/>
-                    <div className="card-text">
-                        <div>{project.tags}</div>
-                        <div>{project.title}</div>
-                        <div>{project.description}</div>
+                    <div className="text">
+                        <div className="tags">{project.tags}</div>
+                        <div className="title">{project.title}</div>
+                        <div className="description">{project.description}</div>
+                        
                     </div>
+                    <a href={project.url} className="button">Visit website</a>
                 </div>
             })}
-       </div>  
+       </div>
+            
       </section>
     );
   };
 
 
 
-  export default Projects;
-
+  export default ProjectsFullImage;

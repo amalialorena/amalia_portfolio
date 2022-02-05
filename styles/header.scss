@@ -1,54 +1,70 @@
 header {
+  text-align: center;
+  background-color: #e3f1ff;
+  position: relative;
+  padding-top: 55px;
+  height: 485px;
+  h2 {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
     text-align: center;
-    background-color: #e3f1ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .greeting-bubble {
     position: relative;
-    padding-top: 10px;
-    h1 {
-        text-align: center;
-        line-height: 90px;
-        margin :0;
-    }
-    .greeting-bubble {
-       
-        background-image:url(/bubble.svg);
-        background-repeat: no-repeat;
-        height: 100px;
-        background-size: contain;
-        background-position: center;
-        margin-bottom: 10px;
-    }
+    height: 200px;
+    background-image: url(/greeting-bubble.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+  .greeting-text {
+    margin-bottom: 40px;
     span {
-        display: block;
-        text-align: center;
-        line-height: 25px;
-        span {
-            display: inline-block;
-            font-weight: bold;
-        }
-        span.name {
-            color: #0b61ff;
-        }
-    }
-    img {
-        height: 7px;
-    }
-    p {
-        font-size: 13px;
-        text-align: center;
-        margin: 30px 5px;
+      text-align: center;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 32px;
+      span {
         display: inline-block;
+        font-weight: bold;
+      }
+      span.name {
+        color: #0b61ff;
+      }
     }
-    button {
-        width: 100px;
-        position: absolute;
-        bottom: 2px;
-        left: 50%; 
-        transform: translate(-50%, 50%);
-        width: 120px;
-        height: 40px;
-        border-radius: 18px;
-        background-color: #0b61fe;
-        color: white;
-        border: 2px solid white;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 8px;
+  }
+  .greeting-button {
+    span:first-child {
+      margin-right: 8px !important;
     }
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 16px 40px;
+    border-radius: 18px;
+    background-color: #0b61fe;
+    color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
