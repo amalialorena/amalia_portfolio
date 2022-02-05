@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { mailTo } from './utils';
+
 function Nav() {
   return (
     <nav>
@@ -15,10 +17,10 @@ function Nav() {
         </span>
       </div>
       <div>
-        <button className="button greeting-button">
+        <a href={mailTo} className="button greeting-button">
           <Image src="/mail.svg" alt="mail" width="16" height="16" />
           <span>Contact me</span>
-        </button>
+        </a>
       </div>
     </nav>
   );

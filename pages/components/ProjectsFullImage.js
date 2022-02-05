@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Button from '../components/Button';
 
 const projects = [
     {
@@ -49,7 +48,6 @@ const projects = [
 ];
 
 function ProjectsFullImage() {
-    const projectText = "qweweew  qweewq Website";
     return (
       <section className="cards-container">
        <h2>Projects</h2>

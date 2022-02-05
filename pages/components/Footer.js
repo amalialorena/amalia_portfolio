@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer>
       <section className="contact">
-        <a href="mailto:amasherbet@gmail.com" className="container">
+        <a href="mailto:amasherbet@gmail.com subject=amalia%20portfolio%20contact" className="container">
           <div className='contact-cta'>
             <h3>Contact me!</h3>
             <p>

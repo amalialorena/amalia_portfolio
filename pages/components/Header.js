@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { mailTo } from './utils';
 
 function Header() {
   return (
@@ -23,7 +24,7 @@ function Header() {
         height="12"
       />
       <p>Right now I am available for work</p>
-      <button className="button greeting-button">
+      <a href={mailTo} className="button greeting-button">
         <Image
         src="/mail.svg"
         alt="mail"
@@ -31,7 +32,7 @@ function Header() {
         height="16"
         />
         <span>Contact me</span>
-      </button>
+      </a>
     </header>
   );
 }
