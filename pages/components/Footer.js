@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer>
       <section className="contact">
-        <div className="container">
+        <a href="mailto:amasherbet@gmail.com" className="container">
           <div className='contact-cta'>
             <h3>Contact me!</h3>
             <p>
@@ -14,11 +14,11 @@ function Footer() {
           <div className="telegram-icon">
             <Image src="/telegram.svg" alt="telegram icon" width="33" height="34"/>
           </div>
-        </div>
+        </a>
       </section>
       <section className="copyright">
         <div className="copyright-container">
-        <p>Copyright 2021 @Amalia Lorena Ferariu </p>
+        <p>Copyright 2021 @ Amalia Lorena Ferariu </p>
         <small>Thanks for stopping by</small>
         </div>
       </section>

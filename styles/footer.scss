@@ -1,11 +1,14 @@
 footer {
   background-color: #dfeeff;
   .contact {
-    height: 400px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 16px;
+    @media (min-width: 768px) {
+      height: 400px;
+    }
 
     .container {
       display: flex;
@@ -48,8 +51,8 @@ footer {
 
   .copyright {
     text-align: center;
-    background: #9aa4ae;
-    color: white;
+    background: #babcc7;
+    color: #414b58;
 
     .copyright-container {
       padding: 80px 0 60px;
