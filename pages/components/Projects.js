@@ -49,9 +49,45 @@ const projects = [
     imageWidth: "650",
     imageHeight: "325",
   },
+  {
+    id: "5",
+    tags: ["js", "HTML", "SCSS"],
+    title: "Minefield",
+    url: "https://gallant-ramanujan-8e72ac.netlify.app/",
+    description:
+      "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.",
+    imagePath: "/minefield.jpg",
+    imageAlt: "project image",
+    imageWidth: "650",
+    imageHeight: "325",
+  },
+  {
+    id: "6",
+    tags: ["VUEJS", "HTML", "SCSS"],
+    title: "Avada shop clone",
+    url: "https://optimistic-bassi-1bc253.netlify.app",
+    description:
+      "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.",
+    imagePath: "/avada.jpg",
+    imageAlt: "project image",
+    imageWidth: "650",
+    imageHeight: "325",
+  },
+  {
+    id: "7",
+    tags: ["instagram", "handmade", "sculptures", "art"],
+    title: "My art on Instagram",
+    url: "https://optimistic-bassi-1bc253.netlify.app",
+    description:
+      "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.",
+    imagePath: "/sherbet-lemon-etsy2.jpg",
+    imageAlt: "project image",
+    imageWidth: "650",
+    imageHeight: "325",
+  },
 ];
 
-function ProjectsFullImage() {
+function Projects() {
   return (
     <section className="cards-container">
       <h2 className="cards-title">Projects</h2>
@@ -96,4 +132,4 @@ function ProjectsFullImage() {
   );
 }
 
-export default ProjectsFullImage;
+export default Projects;

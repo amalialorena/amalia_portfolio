@@ -17,6 +17,7 @@ h2 {
     line-height: 22px;
     text-align: center;
     color: #999999;
+    padding: 0 16px;
   }
 
   .button {
@@ -29,9 +30,11 @@ h2 {
     max-width: calc(100% - 32px);
     margin: 0 auto 10px;
     position: inherit;
+
     &:hover {
       background-color: $brand-color-dark;
     }
+
     @media (min-width: 768px) {
       position: absolute;
       bottom: -22px;
@@ -78,11 +81,16 @@ h2 {
           font-weight: bold;
           font-size: 11px;
           line-height: 160%;
+
+          .tag {
+            margin-right: 8px;
+          }
         }
 
         .title {
           font-size: 24px;
           line-height: 160%;
+          margin-bottom:10px;
         }
 
         .description {

@@ -1,11 +1,13 @@
 footer {
   background-color: #dfeeff;
+
   .contact {
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 16px;
+
     @media (min-width: 768px) {
       height: 400px;
     }
@@ -40,11 +42,12 @@ footer {
       }
 
       .telegram-icon {
+        flex-shrink: 0;
         border-left: 1px solid rgba(0, 0, 0, 0.2);
         line-height: 100px;
-        text-align: center;
         padding: 0 20px;
-        height: 70px;
+        display: flex;
+        min-height: 70px;
       }
     }
   }
