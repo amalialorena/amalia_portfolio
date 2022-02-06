@@ -3,8 +3,32 @@ import { mailTo } from '../../utils/utils';
 
 function Header() {
   return (
-    <header>
+    <header>     
       <div className="greeting-bubble">
+      <a href="https://www.instagram.com/sherbetlemonit/" className="social-bubble social-instagram">
+          <Image
+            src="/instagram.svg"
+            alt="instagram"
+            width="32"
+            height="32"
+          />
+      </a>
+      <a href="https://github.com/amalialorena" className="social-bubble social-github">
+          <Image
+            src="/github.svg"
+            alt="github"
+            width="32"
+            height="32"
+          />
+      </a>
+      <a href={mailTo} className="social-bubble social-email">
+          <Image
+            src="/email.svg"
+            alt="email"
+            width="32"
+            height="32"
+          />
+      </a>
         <h2>Hi,</h2>
       </div>
       <div className="greeting-text">

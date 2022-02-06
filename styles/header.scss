@@ -1,13 +1,13 @@
 @import "./variables.scss";
 
 header {
-  padding: 40px 16px 80px;
-    text-align: center;
-    background-image: url('/header-background.png');
-    background-position: 0 -6px;
-    box-shadow: inset 0px 15px 20px -10px rgba(0, 0, 0, 0.40);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    position: relative;
+  padding: 80px 16px 80px;
+  text-align: center;
+  background-image: url("/header-background.png");
+  background-position: 0 -6px;
+  box-shadow: inset 0px 15px 20px -10px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
 
   @media (min-width: 786px) {
     padding-top: 55px;
@@ -28,21 +28,63 @@ header {
     transform: translate(-50%, -50%);
   }
 
+  .social-bubble {
+    width: 65px;
+    height: 65px;
+    background: #ffffff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+    img {
+      transition: filter 0.2s ease;
+    }
+    
+    &:hover {
+      background-color: $brand-color;
+  
+      img {
+        filter: contrast(0) brightness(10);
+      }
+    }
+
+    &.social-instagram {
+      position: absolute;
+      right: 225px;
+      top: 50px;
+    }
+    &.social-github {
+      position: absolute;
+      right: -40px;
+      top: -30px;
+    }
+    &.social-email {
+      position: absolute;
+      left: 190px;
+      top: 105px;
+    }
+  }
+
   .greeting-bubble {
     position: relative;
     height: 200px;
-    background-image: url('/greeting-bubble.svg');
+    background-image: url("/greeting-bubble.svg");
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 40px;
+    width: 200px;
+    margin: 0 auto 40px;
   }
 
   .greeting-text {
     margin-bottom: 20px;
+
     @media (min-width: 786px) {
       margin-bottom: 40px;
     }
-    
+
     span {
       text-align: center;
       font-weight: normal;
@@ -85,12 +127,13 @@ header {
     border: 2px solid white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 12px 22px;
+
     span:first-child {
       margin-right: 8px !important;
     }
+
     @media (min-width: 786px) {
       padding: 16px 40px;
-      
     }
   }
 }
