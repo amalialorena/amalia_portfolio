@@ -9,12 +9,6 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
 
-  @media (min-width: 786px) {
-    padding-top: 55px;
-    height: 485px;
-    padding: 80px 16px 20px;
-  }
-
   h2 {
     margin: 0;
     font-style: normal;
