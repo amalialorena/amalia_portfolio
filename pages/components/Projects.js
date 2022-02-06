@@ -3,7 +3,7 @@ import Image from "next/image";
 const projects = [
   {
     id: "1",
-    tags: ["VUEJS", "HTML", "SCSS"],
+    tags: ["VUEJS", "HTML", "CSS"],
     title: "BoolFlix: a Netflix clone",
     url: "https://serene-aryabhata-f2a958.netlify.app",
     description:
@@ -15,8 +15,8 @@ const projects = [
   },
   {
     id: "2",
-    tags: ["VUEJS", "HTML", "SCSS"],
-    title: "BoolApp: a whatsapp clone",
+    tags: ["VUEJS", "HTML", "CSS"],
+    title: "BoolApp: a WhatsApp clone",
     url: "https://elastic-rosalind-d13b9f.netlify.app",
     description:
       "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.",
@@ -27,8 +27,8 @@ const projects = [
   },
   {
     id: "3",
-    tags: ["VUEJS", "HTML", "SCSS"],
-    title: "BoolApp: a whatsapp clone",
+    tags: ["Bootstrap", "HTML", "CSS"],
+    title: "Playstation clone",
     url: "https://optimistic-blackwell-b8d3cc.netlify.app",
     description:
       "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.",
@@ -39,8 +39,8 @@ const projects = [
   },
   {
     id: "4",
-    tags: ["VUEJS", "HTML", "SCSS"],
-    title: "BoolApp: a whatsapp clone",
+    tags: ["HTML", "CSS"],
+    title: "Spotify clone",
     url: "https://quizzical-benz-9502d1.netlify.app",
     description:
       "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.",
@@ -51,11 +51,11 @@ const projects = [
   },
   {
     id: "5",
-    tags: ["js", "HTML", "SCSS"],
-    title: "Minefield",
+    tags: ["JS", "HTML", "CSS"],
+    title: "Minefield game",
     url: "https://gallant-ramanujan-8e72ac.netlify.app/",
     description:
-      "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.",
+      "The user indicates a level of difficulty on the basis of which a square game grid is generated, When the user clicks on each cell, the clicked cell changes color, if the number is present in the list of generated numbers - we stepped on a bomb - the cell turns red and the game ends. At the end of the game, the software must discover all the bombs and communicate the score, that is the number of times the user has clicked a small square with an allowed number.",
     imagePath: "/minefield.jpg",
     imageAlt: "project image",
     imageWidth: "650",
@@ -64,7 +64,7 @@ const projects = [
   {
     id: "6",
     tags: ["VUEJS", "HTML", "SCSS"],
-    title: "Avada shop clone",
+    title: "Avada theme clone",
     url: "https://optimistic-bassi-1bc253.netlify.app",
     description:
       "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.",
@@ -91,7 +91,9 @@ function Projects() {
   return (
     <section className="cards-container">
       <h2 className="cards-title">Projects</h2>
-       <p className="cards-subtitle">A selection of some projects, from the over 50 projects I have done</p>
+      <p className="cards-subtitle">
+        A selection of some projects, from the over 50 projects I have done
+      </p>
       <div className="cards">
         {projects.map((project) => {
           return (
