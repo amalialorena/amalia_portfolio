@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { mailTo } from './utils';
+import { mailTo } from '../../utils/utils';
 
 function Nav() {
   return (
