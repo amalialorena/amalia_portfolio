@@ -37,7 +37,7 @@ function Header() {
         </span>
         <br />
         <span>
-          I am a junior <span>Frontend Developer</span> based in Lecco.
+          I am a junior <span>Frontend Developer</span> based in Lecco (Italy).
         </span>
       </div>
 

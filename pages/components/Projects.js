@@ -3,49 +3,49 @@ import Image from "next/image";
 const projects = [
   {
     id: "1",
-    tags: ["VUEJS","JS", "HTML", "CSS"],
-    title: "BoolFlix: a Netflix clone",
+    tags: ["VUEJS", "JS", "HTML 5", "CSS 3", "NPM"],
+    title: "BoolFlix: a Netflix replica",
     url: "https://serene-aryabhata-f2a958.netlify.app",
     description:
-      "Boolflix is ​​a project made in Vue.js. It interfaces with the TMDB API to show the user a catalog of Movies and TV Series. It allows you to search  any film or series and read  related pieces of information like original title, rating, overview, language etc.",
+      "Boolflix is a project made in VueJS, it interfaces with the TMDB API to show the user a catalog of Movies and TV Series. It allows you to search any film or series to see additional information such as original title, ratings, overviews, language etc.",
     imagePath: "/boolflix.jpg",
-    imageAlt: "project image",
+    imageAlt: "Boolflix",
     imageWidth: "650",
     imageHeight: "325",
   },
   {
     id: "2",
-    tags: ["VUEJS","JS", "HTML", "CSS", "DayJs"],
-    title: "BoolApp: a WhatsApp clone",
+    tags: ["VUEJS", "JS", "HTML 5", "CSS 3", "DayJs"],
+    title: "BoolApp: a WhatsApp replica",
     url: "https://elastic-rosalind-d13b9f.netlify.app",
     description:
-      "'Boolzapp' is the replica of Whatsapp Web, it allows you to send messages to contacts, and receive an automatic reply after a second. The hour and date display on your messages are updated with DayJs.  You can filter your contacts by entering their name in the search bar or you can select them by clicking on their name. The last message sent or received is displayed under the contact name.",
+      "Boolzapp is a replica of Whatsapp Web, it allows you to send messages to contacts, and receive an automatic reply after a second. The hour and date display on your messages are updated with DayJs. You can filter your contacts by entering their name in the search bar or you can select them by clicking on their name. The last message sent or received is displayed under the contact name.",
     imagePath: "/boolzapp.jpg",
-    imageAlt: "project image",
+    imageAlt: "Boolzapp",
     imageWidth: "650",
     imageHeight: "325",
   },
   {
     id: "3",
-    tags: ["Bootstrap", "HTML", "CSS"],
-    title: "Playstation clone",
+    tags: ["Bootstrap 3", "HTML 5", "CSS 3"],
+    title: "Playstation replica",
     url: "https://optimistic-blackwell-b8d3cc.netlify.app",
     description:
-      "This was among my first big projects after a month and a half of training with Boolean Careers. Responsive playback of the official Playstation website. ",
+      "This was among my first big projects, after a month and a half of training with Boolean Careers. It's a mobile first replica of the official Playstation website.",
     imagePath: "/playstation.jpg",
-    imageAlt: "project image",
+    imageAlt: "Playstation replica",
     imageWidth: "650",
     imageHeight: "325",
   },
   {
     id: "4",
     tags: ["HTML", "CSS"],
-    title: "Spotify clone",
+    title: "Spotify replica",
     url: "https://quizzical-benz-9502d1.netlify.app",
     description:
-      "Spotify replication was the first web app I developed, compared to previous projects the use of Media Queries was also implemented to make the application completely responsive. The project is developed with HTML and CSS.",
+      "This replica of Spotify was one of the firsts web application I developed, it introduced me to the concept of media queries and responsive design with HTML and CSS.",
     imagePath: "/spotify.jpg",
-    imageAlt: "project image",
+    imageAlt: "Spotify replica",
     imageWidth: "650",
     imageHeight: "325",
   },
@@ -55,9 +55,9 @@ const projects = [
     title: "Minefield game",
     url: "https://gallant-ramanujan-8e72ac.netlify.app/",
     description:
-      "The user indicates a level of difficulty on the basis of which a square game grid is generated, When the user clicks on each cell, the clicked cell changes color, if the number is present in the list of generated numbers - we stepped on a bomb - the cell turns red and the game ends. At the end of the game, the software must discover all the bombs and communicate the score, that is the number of times the user has clicked a small square with an allowed number.",
+      "In this small javascript game, the user needs to avoid the bomb. He will be asked to choose a difficulty level and based on that the a grid will be created. when the user clicks on a cell, the clicked cell changes color, if the number is present in a list of random generated numbers, you stepped on a bomb! The cell will turn red and the game ends. At the end of the game, the software will cicle trough all the bombs and calculate the score based on the number of times the user has succesfully clicked a square with an allowed number.",
     imagePath: "/minefield.jpg",
-    imageAlt: "project image",
+    imageAlt: "Minefield game",
     imageWidth: "650",
     imageHeight: "325",
   },
@@ -67,21 +67,21 @@ const projects = [
     title: "Avada theme clone",
     url: "https://optimistic-bassi-1bc253.netlify.app",
     description:
-      "Avada theme is a web app built in Vue js. Thanks to the use of components, I was able to reuse portions of the layout, improving the maintainability of the code and the performance of my application. Some elements on the page are interactive like the menu for example.",
+      "Avada is one of the most popular themes, I replicated one of the layouts as a web application with VueJS. Thanks to the use of components, I was able to reuse portions of the layout, improving the maintainability of the code and the performance of my application. Some elements on the page are interactive like the menu for example.",
     imagePath: "/avada.jpg",
-    imageAlt: "project image",
+    imageAlt: "Avada",
     imageWidth: "650",
     imageHeight: "325",
   },
   {
     id: "7",
-    tags: ["instagram", "handmade", "sculptures", "art"],
+    tags: ["instagram", "made by me!", "handmade", "sculptures", "art"],
     title: "My art on Instagram",
     url: "https://www.instagram.com/sherbetlemonit/",
     description:
-      "In my spare time, I dedicated myself to developing my artistic skills by working on numerous projects ranging from illustration to sculpture. Pictures of my artwork are available on my instagram page.",
+      "Art has always been one of my passions, I created lots of different pieces and developed my artistic skills by working on many different projects ranging from illustration, video editing and sculpture. Some pictures of my artworks are available on my instagram page, check it out!",
     imagePath: "/sherbet-lemon-etsy2.jpg",
-    imageAlt: "project image",
+    imageAlt: "My Instagram page",
     imageWidth: "650",
     imageHeight: "325",
   },
@@ -98,12 +98,14 @@ function Projects() {
         {projects.map((project) => {
           return (
             <div className="card" key={project.id}>
-              <Image
-                src={project.imagePath}
-                alt={project.imageAlt}
-                width={project.imageWidth}
-                height={project.imageHeight}
-              />
+              <a href={project.url}>
+                <Image
+                  src={project.imagePath}
+                  alt={project.imageAlt}
+                  width={project.imageWidth}
+                  height={project.imageHeight}
+                />
+              </a>
               <div className="text">
                 <div className="tags">
                   {project.tags.map(function (tag) {
