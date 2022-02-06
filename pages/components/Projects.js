@@ -77,7 +77,7 @@ const projects = [
     id: "7",
     tags: ["instagram", "handmade", "sculptures", "art"],
     title: "My art on Instagram",
-    url: "https://optimistic-bassi-1bc253.netlify.app",
+    url: "https://www.instagram.com/sherbetlemonit/",
     description:
       "Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.",
     imagePath: "/sherbet-lemon-etsy2.jpg",
