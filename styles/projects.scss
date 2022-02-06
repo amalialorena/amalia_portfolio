@@ -5,6 +5,19 @@ h2 {
 }
 
 .cards-container {
+  .cards-title {
+    margin-bottom: 8px;
+  }
+  .cards-subtitle {
+    margin-top: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #999999;
+  }
+
   .button {
     background-color: $brand-color;
     padding: 8px 30px;

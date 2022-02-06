@@ -54,7 +54,8 @@ const projects = [
 function ProjectsFullImage() {
   return (
     <section className="cards-container">
-      <h2>Projects</h2>
+      <h2 className="cards-title">Projects</h2>
+       <p className="cards-subtitle">A selection of some projects, from the over 50 projects I have done</p>
       <div className="cards">
         {projects.map((project) => {
           return (

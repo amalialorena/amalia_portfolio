@@ -10,7 +10,7 @@ function Nav() {
           <Image src="/logo.svg" alt="logo" width="29" height="29" />
         </div>
         <span className="nav-name">
-          <div clspanssName="my-name">
+          <div className="my-name">
             <strong>Amalia</strong> Ferariu
           </div>
           <div className="portfolio">Personal portfolio</div>
